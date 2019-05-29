@@ -1,35 +1,7 @@
-import java.util.ArrayList;
-
-
+package sport;
 
 public class Main {
+    Person person = new Person("MMM", "name", "F", 10, false, 45);
+    Person person1 = new Person("ZZZ", "Name2", "M", 15, false, 46);
 
-    public static void main(String[] args) {
-
-        StringBuffer stringBuffer = new StringBuffer("Hello! I am happy!");
-
-        stringBuffer.length();
-
-        int indexDelimiter = stringBuffer.indexOf("!");
-
-        ArrayList/*<StringBuffer>*/ sentences = new ArrayList();
-
-        String sentence = stringBuffer.substring(0,
-
-                indexDelimiter);
-
-
-
-        sentences.add(new StringBuffer(sentence));
-
-        sentences.add("");
-
-        StringBuffer x = (StringBuffer) sentences.get(1);
-
-        System.out.println(x);
-
-        System.out.println(x.length());
-
-    }
-
-} 
+}
